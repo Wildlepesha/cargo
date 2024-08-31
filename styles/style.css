@@ -309,20 +309,23 @@ img {
 .image-wrapper {
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #393F47;
+  margin-block-end: 23px;
+}
+
+.cards-list__item__image {
   filter: invert(1);
 }
 
-.image-wrapper:has(:not(.image-wrapper_active)) {
-  margin: 20px;
-  padding: 20px;
+.image-wrapper.image-wrapper_active {
+  background-color: #FFF;
 }
 
-.image-wrapper_active {
-  border-radius: 50%;
-  padding: 20px;
+.image-wrapper.image-wrapper_active > .cards-list__item__image{
   background-color: #FFF;
   filter: invert(0);
-  margin-block-end: 23px;
 }
 
 .cards-list__item__text {
